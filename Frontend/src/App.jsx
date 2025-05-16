@@ -49,11 +49,11 @@ const App = () => {
         setHistoricalData(historicalRes.data.timeline || historicalRes.data); // fallback in case 'timeline' is missing
         setCurrentStats(currentRes.data);
         // console.log("Historical API response:", historicalRes.data);
-        console.log("Current API response:", currentRes.data);
+        //console.log("Current API response:", currentRes.data);
 
       } catch (err) {
         console.error(err);
-        setError('No Internet, Failed to load COVID data.');
+        setError('No Internet or Failed to load COVID data for this country.');
       }
     };
 
